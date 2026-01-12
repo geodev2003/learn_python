@@ -77,7 +77,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 ## List và Tuple:
-- ### *** List *** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
+- *** List *** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
 
 ***Ví dụ:***
 ```
@@ -87,12 +87,15 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 **Dùng List khi:**
+
 --- Cần thay đổi, thêm, xóa phần tử trong tập hợp dữ liệu.
+
 --- Cần sắp xếp hoặc lọc dữ liệu.
+
 --- Cần lưu trữ dữ liệu có kích thước thay đổi.
 
 **Phương thức của List:**
-- *append():* Thêm một phần tử vào cuối danh sách.    
+--- *append():* Thêm một phần tử vào cuối danh sách.    
 ```
 *Ví dụ:* danh_sach.append(5)
 ```
@@ -118,11 +121,15 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 
-- ### *** Tuple *** là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
-Ví dụ:
+- *** Tuple *** là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
+
+***Ví dụ:***
+```
     bo_tu = (1, 2, 3)
     # bo_tu.append(4)  # Lỗi! Không thể thêm phần tử vào tuple
     print(bo_tu)  # Kết quả: (1, 2, 3)
+```
+
 
 **Dùng Tuple khi:**
 
@@ -132,30 +139,39 @@ Ví dụ:
 
 --- Cần sử dụng như khóa trong dictionary (vì khóa phải là immutable).
 
-Phương thức của Tuple:
-- count(): Đếm số lần xuất hiện của một phần tử trong tuple.    Ví dụ: bo_tu.count(2) sẽ trả về 1.
-- index(): Trả về chỉ số của phần tử đầu tiên có giá trị được chỉ định.     Ví dụ: bo_tu.index(3) sẽ trả về 2.
+**Phương thức của Tuple:**
 
-Ưu nhược điểm của List và Tuple:
-- List:
+- *count():* Đếm số lần xuất hiện của một phần tử trong tuple.    
+```
+Ví dụ: bo_tu.count(2) sẽ trả về 1.
+```
+
+- *index():* Trả về chỉ số của phần tử đầu tiên có giá trị được chỉ định.     
+```
+Ví dụ: bo_tu.index(3) sẽ trả về 2.
+```
+
+## Ưu nhược điểm của List và Tuple:
+- ***List:***
   + Ưu điểm: Có thể thay đổi nội dung, linh hoạt trong việc quản lý dữ liệu.
   + Nhược điểm: Tốn nhiều bộ nhớ hơn so với tuple.
 
-- Tuple:
+- ***Tuple:***
   + Ưu điểm: Tốn ít bộ nhớ hơn, an toàn hơn vì không thể thay đổi nội dung.
   + Nhược điểm: Không thể thay đổi nội dung sau khi tạo.
 
-Chuyển dổi giữa List và Tuple:
+**Chuyển dổi giữa List và Tuple:**
 - Sử dụng hàm list() để chuyển từ tuple sang list.
 - Sử dụng hàm tuple() để chuyển từ list sang tuple.
-Ví dụ:
+***Ví dụ:***
+```
     danh_sach = [1, 2, 3]
     bo_tu = tuple(danh_sach)  # Chuyển từ list sang tuple
     print(bo_tu)  # Kết quả: (1, 2, 3)
     bo_tu = (4, 5, 6)
     danh_sach = list(bo_tu)  # Chuyển từ tuple sang list
     print(danh_sach)  # Kết quả: [4, 5, 6]
-
+```
 
 Set và Dictionary:
 - Set là tập hợp các phần tử duy nhất, không có thứ tự.
