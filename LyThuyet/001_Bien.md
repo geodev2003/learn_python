@@ -86,7 +86,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
     print(danh_sach)  # Kết quả: [1, 2, 3, 4]
 ```
 
-**Dùng List khi:**
+#### Dùng List khi:
 
 + Cần thay đổi, thêm, xóa phần tử trong tập hợp dữ liệu.
 
@@ -94,7 +94,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 
 + Cần lưu trữ dữ liệu có kích thước thay đổi.
 
-**Phương thức của List:**
+#### Phương thức của List:
 + *append():* Thêm một phần tử vào cuối danh sách.    
 ```
 *Ví dụ:* danh_sach.append(5)
@@ -131,7 +131,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 
-**Dùng Tuple khi:**
+#### Dùng Tuple khi:
 
 + Dữ liệu không cần thay đổi sau khi tạo.
 
@@ -139,7 +139,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 
 + Cần sử dụng như khóa trong dictionary (vì khóa phải là immutable).
 
-**Phương thức của Tuple:**
+#### Phương thức của Tuple:
 
 + *count():* Đếm số lần xuất hiện của một phần tử trong tuple.    
 ```
@@ -179,7 +179,7 @@ Ví dụ: bo_tu.index(3) sẽ trả về 2.
     + ***Ví dụ*** về các kiểu dữ liệu có thể thay đổi: list, dictionary, set.
 
 #### Các thao tác cơ bản với set:
-- **Tạo set:** sử dụng dấu ngoặc nhọn *{}* hoặc hàm *set()*.
+- *Tạo set:* sử dụng dấu ngoặc nhọn **{}** hoặc hàm **set()**.
 
 ***Ví dụ:***
 ```
@@ -288,8 +288,8 @@ Ví dụ: bo_tu.index(3) sẽ trả về 2.
 
 - ***Dictionary*** là tập hợp các cặp khóa-giá trị, cho phép truy cập nhanh theo khóa. Mỗi khóa trong dictionary phải là duy nhất và không thể thay đổi (immutable), 
 trong khi giá trị có thể là bất kỳ kiểu dữ liệu nào và có thể thay đổi (mutable).
-+ ***Ví dụ*** về các kiểu dữ liệu không thể thay đổi: số nguyên (int), số thực (float), chuỗi (string), tuple.
-+ ***Ví dụ*** về các kiểu dữ liệu có thể thay đổi: list, dictionary, set.
+    + ***Ví dụ*** về các kiểu dữ liệu không thể thay đổi: số nguyên (int), số thực (float), chuỗi (string), tuple.
+    + ***Ví dụ*** về các kiểu dữ liệu có thể thay đổi: list, dictionary, set.
 
 #### Các thao tác cơ bản với dictionary:
 - **Tạo dictionary:** sử dụng dấu ngoặc nhọn *{}* hoặc hàm *dict()*.
