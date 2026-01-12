@@ -174,116 +174,116 @@ Ví dụ: bo_tu.index(3) sẽ trả về 2.
 ```
 
 ### Set và Dictionary:
-    - ***Set*** là tập hợp các phần tử duy nhất, không có thứ tự. Các phần tử trong set phải là kiểu dữ liệu không thể thay đổi (immutable).
-        + ***Ví dụ*** về các kiểu dữ liệu không thể thay đổi: số nguyên (int), số thực (float), chuỗi (string), tuple.
-        + ***Ví dụ*** về các kiểu dữ liệu có thể thay đổi: list, dictionary, set.
+- ***Set*** là tập hợp các phần tử duy nhất, không có thứ tự. Các phần tử trong set phải là kiểu dữ liệu không thể thay đổi (immutable).
+    + ***Ví dụ*** về các kiểu dữ liệu không thể thay đổi: số nguyên (int), số thực (float), chuỗi (string), tuple.
+    + ***Ví dụ*** về các kiểu dữ liệu có thể thay đổi: list, dictionary, set.
 
-    #### Các thao tác cơ bản với set:
-    - **Tạo set:** sử dụng dấu ngoặc nhọn *{}* hoặc hàm *set()*.
+#### Các thao tác cơ bản với set:
+- **Tạo set:** sử dụng dấu ngoặc nhọn *{}* hoặc hàm *set()*.
 
-    ***Ví dụ:***
-    ```
-        my_set = {1, 2, 3}
-        another_set = set([4, 5, 6])
-    ```
-    - **Thêm phần tử:** sử dụng phương thức *add()*.
+***Ví dụ:***
+```
+    my_set = {1, 2, 3}
+    another_set = set([4, 5, 6])
+```
+- **Thêm phần tử:** sử dụng phương thức *add()*.
 
-    ***Ví dụ:***
-    ```
-        my_set.add(4)
-    ```
-    - **Hợp nhất set:** sử dụng phương thức *update()* hoặc toán tử *|*.
+***Ví dụ:***
+```
+    my_set.add(4)
+```
+- **Hợp nhất set:** sử dụng phương thức *update()* hoặc toán tử *|*.
 
-    ***Ví dụ:***
-    ```
-        my_set.update(another_set) # my_set = { 1, 2, 3, 4, 5, 6 }
-        my_set = my_set | another_set # my_set = { 1, 2, 3} | {4, 5, 6} = {1, 2, 3, 4, 5, 6}
-    ```
-    - **Liên kết của hai set:** sử dụng phương thức *union()* hoặc toán tử *|*.
+***Ví dụ:***
+```
+    my_set.update(another_set) # my_set = { 1, 2, 3, 4, 5, 6 }
+    my_set = my_set | another_set # my_set = { 1, 2, 3} | {4, 5, 6} = {1, 2, 3, 4, 5, 6}
+```
+- **Liên kết của hai set:** sử dụng phương thức *union()* hoặc toán tử *|*.
 
-    ***Ví dụ:***
-    ```
-        union_set = my_set.union(another_set) # my_set = {1, 2, 3} union {4, 5, 6} = {1, 2, 3, 4, 5, 6}
-        union_set = my_set | another_set # my_set = {1, 2, 3} | {4, 5, 6} = {1, 2, 3, 4, 5, 6}
-    ```
-    - **Giao nhau của hai set:** sử dụng phương thức *intersection()* hoặc toán tử *&*.
+***Ví dụ:***
+```
+    union_set = my_set.union(another_set) # my_set = {1, 2, 3} union {4, 5, 6} = {1, 2, 3, 4, 5, 6}
+    union_set = my_set | another_set # my_set = {1, 2, 3} | {4, 5, 6} = {1, 2, 3, 4, 5, 6}
+```
+- **Giao nhau của hai set:** sử dụng phương thức *intersection()* hoặc toán tử *&*.
 
-    ***Ví dụ:***
-    ```
-        intersection_set = my_set.intersection(another_set) # my_set = {1, 2, 3} intersection {3, 4, 5} = {3}
-        intersection_set = my_set & another_set # my_set = {1, 2, 3} & {3, 4, 5} = {3}
-    ```
-    - **Hiệu của hai set:** sử dụng phương thức *difference()* hoặc toán tử *-*.
+***Ví dụ:***
+```
+    intersection_set = my_set.intersection(another_set) # my_set = {1, 2, 3} intersection {3, 4, 5} = {3}
+    intersection_set = my_set & another_set # my_set = {1, 2, 3} & {3, 4, 5} = {3}
+```
+- **Hiệu của hai set:** sử dụng phương thức *difference()* hoặc toán tử *-*.
 
-    ***Ví dụ:***
-    ```
-        difference_set = my_set.difference(another_set) # my_set = {1, 2, 3} difference {3, 4, 5} = {1, 2}
-        difference_set = my_set - another_set # my_set = {1, 2, 3} - {3, 4, 5} = {1, 2}
-    ```
-    - **Xóa phần tử:** sử dụng phương thức *remove()* hoặc *discard()*.
+***Ví dụ:***
+```
+    difference_set = my_set.difference(another_set) # my_set = {1, 2, 3} difference {3, 4, 5} = {1, 2}
+    difference_set = my_set - another_set # my_set = {1, 2, 3} - {3, 4, 5} = {1, 2}
+```
+- **Xóa phần tử:** sử dụng phương thức *remove()* hoặc *discard()*.
 
-    ***Ví dụ:***
-    ```
-        my_set.remove(2)  # Nếu phần tử không tồn tại, sẽ
-        my_set.discard(3)  # Nếu phần tử không tồn tại, không báo lỗi
-    ```
-    - **Kiểm tra phần tử:** sử dụng toán tử *in*.
+***Ví dụ:***
+```
+    my_set.remove(2)  # Nếu phần tử không tồn tại, sẽ
+    my_set.discard(3)  # Nếu phần tử không tồn tại, không báo lỗi
+```
+- **Kiểm tra phần tử:** sử dụng toán tử *in*.
 
-    ***Ví dụ:***
-    ```
-        if 1 in my_set:
-            print("1 có trong set")
-    ```
-    #### Dùng Set khi nào?
-    - Khi bạn cần lưu trữ các phần tử duy nhất, không trùng lặp.
+***Ví dụ:***
+```
+    if 1 in my_set:
+        print("1 có trong set")
+```
+#### Dùng Set khi nào?
+- Khi bạn cần lưu trữ các phần tử duy nhất, không trùng lặp.
 
-    ***Ví dụ:***
-    ```
-        # Danh sách học sinh trong một lớp, các từ khóa trong một tài liệu.
-        class_students = {"An", "Bình", "Chi", "An"}  # "An" chỉ xuất hiện một lần
-    ```    
-    - Khi bạn cần thực hiện các phép toán tập hợp như hợp nhất, giao nhau, hiệu.
+***Ví dụ:***
+```
+    # Danh sách học sinh trong một lớp, các từ khóa trong một tài liệu.
+    class_students = {"An", "Bình", "Chi", "An"}  # "An" chỉ xuất hiện một lần
+```    
+- Khi bạn cần thực hiện các phép toán tập hợp như hợp nhất, giao nhau, hiệu.
 
-    ***Ví dụ:*** 
-    ```
-        # Tìm các phần tử chung giữa hai danh sách, tìm các phần tử khác nhau giữa hai tập hợp.
-        list_a = {1, 2, 3, 4}
-        list_b = {3, 4, 5, 6}
-        common_elements = list_a & list_b  # Kết quả: {3, 4}
-    ```
-    - Khi bạn cần kiểm tra sự tồn tại của một phần tử một cách nhanh chóng.
+***Ví dụ:*** 
+```
+    # Tìm các phần tử chung giữa hai danh sách, tìm các phần tử khác nhau giữa hai tập hợp.
+    list_a = {1, 2, 3, 4}
+    list_b = {3, 4, 5, 6}
+    common_elements = list_a & list_b  # Kết quả: {3, 4}
+```
+- Khi bạn cần kiểm tra sự tồn tại của một phần tử một cách nhanh chóng.
 
-    ***Ví dụ:***
-    ```
-        # Kiểm tra xem một từ có trong từ điển hay không.
-        my_set = {"apple", "banana", "cherry"}
-        if "banana" in my_set:
-            print("Từ 'banana' có trong từ điển")
-    ```
-    - Khi bạn không quan tâm đến thứ tự của các phần tử.
+***Ví dụ:***
+```
+    # Kiểm tra xem một từ có trong từ điển hay không.
+    my_set = {"apple", "banana", "cherry"}
+    if "banana" in my_set:
+        print("Từ 'banana' có trong từ điển")
+```
+- Khi bạn không quan tâm đến thứ tự của các phần tử.
 
-    ***Ví dụ:*** 
-    ```
-        # Lưu trữ các thẻ (tags) cho một bài viết, nơi thứ tự không quan trọng.
-        tags = {"python", "programming", "tutorial"}
-        post_tags = tags  # Thứ tự không quan trọng
-        print(post_tags)
-    ```
-    - Khi bạn cần tối ưu hóa bộ nhớ cho các tập hợp lớn.
+***Ví dụ:*** 
+```
+    # Lưu trữ các thẻ (tags) cho một bài viết, nơi thứ tự không quan trọng.
+    tags = {"python", "programming", "tutorial"}
+    post_tags = tags  # Thứ tự không quan trọng
+    print(post_tags)
+```
+- Khi bạn cần tối ưu hóa bộ nhớ cho các tập hợp lớn.
 
-    ***Ví dụ:*** 
-    ```
-        # Lưu trữ các ID người dùng duy nhất trong một hệ thống lớn.
-        list_user_ids = {1001, 1002, 1003, 1001, 1002}  # Chỉ lưu trữ các ID duy nhất
-    ```
-    - Khi bạn cần loại bỏ các phần tử trùng lặp từ một danh sách.
+***Ví dụ:*** 
+```
+    # Lưu trữ các ID người dùng duy nhất trong một hệ thống lớn.
+    list_user_ids = {1001, 1002, 1003, 1001, 1002}  # Chỉ lưu trữ các ID duy nhất
+```
+- Khi bạn cần loại bỏ các phần tử trùng lặp từ một danh sách.
 
-    ***Ví dụ:*** 
-    ```
-        # Lọc các địa chỉ email trùng lặp từ một danh sách gửi thư.
-        email_list = ["user1@gmail.com", "user2@gmai.com", "...."]
-        unique_emails = set(email_list)  # Loại bỏ các email trùng lặp
-    ```
+***Ví dụ:*** 
+```
+    # Lọc các địa chỉ email trùng lặp từ một danh sách gửi thư.
+    email_list = ["user1@gmail.com", "user2@gmai.com", "...."]
+    unique_emails = set(email_list)  # Loại bỏ các email trùng lặp
+```
 
 
 - ***Dictionary*** là tập hợp các cặp khóa-giá trị, cho phép truy cập nhanh theo khóa. Mỗi khóa trong dictionary phải là duy nhất và không thể thay đổi (immutable), 
