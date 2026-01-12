@@ -2,14 +2,21 @@
 
 ## 1. Biến
 ***Biến*** được dùng để lưu trữ dữ liệu trong chương trình.
+
 Biến có thể chứa các kiểu dữ liệu khác nhau như số nguyên, số thực, chuỗi, danh sách, v.v.
 
 **Các loại biến trong Python:**
+
 *- Biến số nguyên (int):* Lưu trữ các số nguyên.
+
 *- Biến số thực (float):* Lưu trữ các số thập phân.
+
 *- Biến chuỗi (str):* Lưu trữ các chuỗi ký tự.
+
 *- Biến danh sách (list):* Lưu trữ một tập hợp các giá trị có thể thay đổi.
+
 *- Biến tuple (tuple):* Lưu trữ một tập hợp các giá trị không thể thay đổi.
+
 *- Biến boolean (bool):* Lưu trữ giá trị đúng (True) hoặc sai (False).
 
 ***Ví dụ:***
@@ -23,11 +30,14 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 **Mutable và Immutable trong Python:**
-***- Biến mutable (có thể thay đổi):*** Danh sách (list), dictionary (dict), set.
+
+***- Biến mutable (có thể thay đổi):*** Danh sách (list), dictionary (dict), set
+
 ***- Biến immutable (không thể thay đổi):*** Số nguyên (int), số thực (float), chuỗi (str), tuple.
 
 **Ép kiểu dữ liệu:**
-- Sử dụng hàm int(), float(), str() để chuyển đổi giữa các kiểu dữ liệu.
+- Sử dụng hàm *int()*, *float()*, *str()* để chuyển đổi giữa các kiểu dữ liệu
+
 ***Ví dụ:***
 ```
     a = "10"
@@ -37,7 +47,8 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 **Type của biến:**
-- Sử dụng hàm type() để kiểm tra kiểu dữ liệu của một biến.
+- Sử dụng hàm *type()* để kiểm tra kiểu dữ liệu của một biến.
+
 ***Ví dụ:***
 ```
     x = 5
@@ -48,6 +59,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 
 **isInstance:**
 - Sử dụng hàm *isinstance()* để kiểm tra xem một biến có phải là một kiểu dữ liệu cụ thể hay không.
+
 ***Ví dụ: ***
 ```
     z = [1, 2, 3]
@@ -57,6 +69,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 
 **id của biến:**
 - Sử dụng hàm *id()* để lấy địa chỉ bộ nhớ của một biến.
+
 ***Ví dụ:***
 ```
     a = 10
@@ -64,7 +77,8 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 ## List và Tuple:
-- ***List*** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
+- *** ##List*** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
+
 ***Ví dụ:***
 ```
     danh_sach = [1, 2, 3]
@@ -73,37 +87,50 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 **Dùng List khi:**
-- Cần thay đổi, thêm, xóa phần tử trong tập hợp dữ liệu.
-- Cần sắp xếp hoặc lọc dữ liệu.
-- Cần lưu trữ dữ liệu có kích thước thay đổi.
+--- Cần thay đổi, thêm, xóa phần tử trong tập hợp dữ liệu.
+--- Cần sắp xếp hoặc lọc dữ liệu.
+--- Cần lưu trữ dữ liệu có kích thước thay đổi.
 
 **Phương thức của List:**
 - *append():* Thêm một phần tử vào cuối danh sách.    
+```
 *Ví dụ:* danh_sach.append(5)
+```
 
-- *insert():* Chèn một phần tử vào vị trí chỉ định trong danh sách.   
-*Ví dụ:* danh_sach.insert(1, 10) sẽ chèn số 10 vào vị trí index 1.
+--- *insert():* Chèn một phần tử vào vị trí chỉ định trong danh sách.   
+```
+*Ví dụ:* danh_sach.insert(1, 10) sẽ chèn số 10 vào vị trí index 1
+```
 
-- *extend():* Mở rộng danh sách bằng cách thêm các phần tử từ một iterable khác.  
+--- *extend():* Mở rộng danh sách bằng cách thêm các phần tử từ một iterable khác.  
+```
 *Ví dụ:* danh_sach.extend([6, 7, 8])
+```
 
-- *remove():* Xóa một phần tử khỏi danh sách.     
+--- *remove():* Xóa một phần tử khỏi danh sách.     
+```
 *Ví dụ:* danh_sach.remove(2) sẽ xóa phần tử có giá trị 2.
+```
 
-- *pop():* Xóa và trả về phần tử ở vị trí chỉ định (mặc định là cuối cùng).   
+--- *pop():* Xóa và trả về phần tử ở vị trí chỉ định (mặc định là cuối cùng).   
+```
 *Ví dụ:* danh_sach.pop() sẽ xóa và trả về phần tử cuối cùng.
+```
 
 
-- Tuple là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
+- *** ###Tuple *** là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
 Ví dụ:
     bo_tu = (1, 2, 3)
     # bo_tu.append(4)  # Lỗi! Không thể thêm phần tử vào tuple
     print(bo_tu)  # Kết quả: (1, 2, 3)
 
-Dùng Tuple khi:
-- Dữ liệu không cần thay đổi sau khi tạo.
-- Cần đảm bảo tính toàn vẹn của dữ liệu.
-- Cần sử dụng như khóa trong dictionary (vì khóa phải là immutable).
+**Dùng Tuple khi:**
+
+--- Dữ liệu không cần thay đổi sau khi tạo.
+
+--- Cần đảm bảo tính toàn vẹn của dữ liệu.
+
+--- Cần sử dụng như khóa trong dictionary (vì khóa phải là immutable).
 
 Phương thức của Tuple:
 - count(): Đếm số lần xuất hiện của một phần tử trong tuple.    Ví dụ: bo_tu.count(2) sẽ trả về 1.
