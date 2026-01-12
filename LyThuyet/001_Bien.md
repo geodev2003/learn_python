@@ -77,7 +77,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 ## List và Tuple:
-- *** ##List*** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
+- ### *** List *** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
 
 ***Ví dụ:***
 ```
@@ -118,7 +118,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 
-- *** ###Tuple *** là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
+- ### *** Tuple *** là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
 Ví dụ:
     bo_tu = (1, 2, 3)
     # bo_tu.append(4)  # Lỗi! Không thể thêm phần tử vào tuple
