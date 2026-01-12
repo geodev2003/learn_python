@@ -179,55 +179,55 @@ Ví dụ: bo_tu.index(3) sẽ trả về 2.
     + ***Ví dụ*** về các kiểu dữ liệu có thể thay đổi: list, dictionary, set.
 
 #### Các thao tác cơ bản với set:
-- *Tạo set:* sử dụng dấu ngoặc nhọn **{}** hoặc hàm **set()**.
+- *Tạo set:* sử dụng dấu ngoặc nhọn ***{}*** hoặc hàm ***set()***.
 
 ***Ví dụ:***
 ```
     my_set = {1, 2, 3}
     another_set = set([4, 5, 6])
 ```
-- **Thêm phần tử:** sử dụng phương thức *add()*.
+- *Thêm phần tử:* sử dụng phương thức ***add()***.
 
 ***Ví dụ:***
 ```
     my_set.add(4)
 ```
-- **Hợp nhất set:** sử dụng phương thức *update()* hoặc toán tử *|*.
+- *Hợp nhất set:* sử dụng phương thức ***update()*** hoặc toán tử ***|***.
 
 ***Ví dụ:***
 ```
     my_set.update(another_set) # my_set = { 1, 2, 3, 4, 5, 6 }
     my_set = my_set | another_set # my_set = { 1, 2, 3} | {4, 5, 6} = {1, 2, 3, 4, 5, 6}
 ```
-- **Liên kết của hai set:** sử dụng phương thức *union()* hoặc toán tử *|*.
+- *Liên kết của hai set:* sử dụng phương thức ***union()*** hoặc toán tử ***|***.
 
 ***Ví dụ:***
 ```
     union_set = my_set.union(another_set) # my_set = {1, 2, 3} union {4, 5, 6} = {1, 2, 3, 4, 5, 6}
     union_set = my_set | another_set # my_set = {1, 2, 3} | {4, 5, 6} = {1, 2, 3, 4, 5, 6}
 ```
-- **Giao nhau của hai set:** sử dụng phương thức *intersection()* hoặc toán tử *&*.
+- *Giao nhau của hai set:* sử dụng phương thức ***intersection()*** hoặc toán tử ***&***.
 
 ***Ví dụ:***
 ```
     intersection_set = my_set.intersection(another_set) # my_set = {1, 2, 3} intersection {3, 4, 5} = {3}
     intersection_set = my_set & another_set # my_set = {1, 2, 3} & {3, 4, 5} = {3}
 ```
-- **Hiệu của hai set:** sử dụng phương thức *difference()* hoặc toán tử *-*.
+- *Hiệu của hai set:* sử dụng phương thức ***difference()*** hoặc toán tử ***-***.
 
 ***Ví dụ:***
 ```
     difference_set = my_set.difference(another_set) # my_set = {1, 2, 3} difference {3, 4, 5} = {1, 2}
     difference_set = my_set - another_set # my_set = {1, 2, 3} - {3, 4, 5} = {1, 2}
 ```
-- **Xóa phần tử:** sử dụng phương thức *remove()* hoặc *discard()*.
+- *Xóa phần tử:* sử dụng phương thức ***remove()*** hoặc ***discard()***.
 
 ***Ví dụ:***
 ```
     my_set.remove(2)  # Nếu phần tử không tồn tại, sẽ
     my_set.discard(3)  # Nếu phần tử không tồn tại, không báo lỗi
 ```
-- **Kiểm tra phần tử:** sử dụng toán tử *in*.
+- *Kiểm tra phần tử:* sử dụng toán tử ***in***.
 
 ***Ví dụ:***
 ```
@@ -292,35 +292,35 @@ trong khi giá trị có thể là bất kỳ kiểu dữ liệu nào và có th
     + ***Ví dụ*** về các kiểu dữ liệu có thể thay đổi: list, dictionary, set.
 
 #### Các thao tác cơ bản với dictionary:
-- **Tạo dictionary:** sử dụng dấu ngoặc nhọn *{}* hoặc hàm *dict()*.
+- *Tạo dictionary:* sử dụng dấu ngoặc nhọn ***{}*** hoặc hàm ***dict()***.
 
 ***Ví dụ:***
 ```
     my_dict = {'a': 1, 'b': 2, 'c': 3}
     another_dict = dict(d=4, e=5, f=6)
 ```
-- **Thêm hoặc cập nhật phần tử:** sử dụng cú pháp *my_dict[key] = value*.
+- *Thêm hoặc cập nhật phần tử:* sử dụng cú pháp ***my_dict[key] = value***.
 
 ***Ví dụ:***
 ```
     my_dict['d'] = 4  # Thêm phần tử mới
     my_dict['a'] = 10 # Cập nhật giá trị của khóa 'a'
 ```
-- **Xóa phần tử:** sử dụng phương thức *del()* hoặc *pop()*.
+- *Xóa phần tử:* sử dụng phương thức ***del()*** hoặc ***pop()***.
 
 ***Ví dụ:***
 ```
     del my_dict['b']        # Xóa phần tử với khóa 'b'
     value = my_dict.pop('c') # Xóa và trả về giá trị của khóa 'c'
 ```
-- **Truy cập phần tử:** sử dụng cú pháp *my_dict[key]* hoặc phương thức *get()*.
+- *Truy cập phần tử:* sử dụng cú pháp ***my_dict[key]*** hoặc phương thức ***get()***.
 
 ***Ví dụ:***
 ```
     value = my_dict['a']        # Truy cập giá trị của khóa 'a'
     value = my_dict.get('b', 0) # Truy cập giá trị của khóa 'b', trả về 0 nếu không tồn tại
 ```
-- **Lặp qua dictionary:** sử dụng vòng lặp *for* để lặp qua các khóa, giá trị hoặc cặp khóa-giá trị.
+- *Lặp qua dictionary:* sử dụng vòng lặp ***for*** để lặp qua các khóa, giá trị hoặc cặp ***khóa-giá trị***.
 
 ***Ví dụ:***
 ```
@@ -330,45 +330,45 @@ trong khi giá trị có thể là bất kỳ kiểu dữ liệu nào và có th
     for key, value in my_dict.items():
         print(key, value)
 ```
-- **Kiểm tra khóa:** sử dụng toán tử *in*.
+- *Kiểm tra khóa:* sử dụng toán tử ***in***.
 
 ***Ví dụ:***
 ```
     if 'a' in my_dict:
         print("Khóa 'a' tồn tại trong dictionary")
 ```
-- **Lấy tất cả các khóa hoặc giá trị:** sử dụng phương thức *keys()* hoặc *values()*.
+- *Lấy tất cả các khóa hoặc giá trị:* sử dụng phương thức ***keys()*** hoặc ***values()***.
 
 ***Ví dụ:***
 ```
     keys = my_dict.keys()     # Lấy tất cả các khóa
     values = my_dict.values() # Lấy tất cả các giá trị
 ```
-- **Lấy tất cả các cặp khóa-giá trị:** sử dụng phương thức *items()*.
+- *Lấy tất cả các cặp khóa-giá trị:* sử dụng phương thức ****items()***.
 
 ***Ví dụ:***
 ```
     items = my_dict.items()   # Lấy tất cả các cặp khóa-giá trị
 ```
-- **Xóa tất cả các phần tử:** sử dụng phương thức *clear()*.
+- *Xóa tất cả các phần tử:* sử dụng phương thức ***clear()***.
 
 ***Ví dụ:***
 ```
     my_dict.clear()           # Xóa tất cả các phần tử trong dictionary
 ```
-- **Sao chép dictionary:** sử dụng phương thức *copy()*.
+- *Sao chép dictionary:* sử dụng phương thức ***copy()***.
 
 ***Ví dụ:***
 ```
     new_dict = my_dict.copy() # Tạo bản sao của dictionary
 ```
-- **Kích thước của dictionary:** sử dụng hàm *len()*.
+- *Kích thước của dictionary:* sử dụng hàm ***len()***.
 
 ***Ví dụ:***
 ```
     size = len(my_dict)       # Lấy số lượng phần tử trong dictionary
 ```
-- **Hàm tích hợp:** *len()*, *id()*
+- *Hàm tích hợp:* ***len()***, ***id()***
 
 ***Ví dụ:***
 ```
