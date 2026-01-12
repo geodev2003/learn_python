@@ -77,7 +77,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
 ### List và Tuple:
-+ ***List*** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
+- ***List*** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
 
 ***Ví dụ:***
 ```
@@ -88,40 +88,40 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 
 **Dùng List khi:**
 
-- Cần thay đổi, thêm, xóa phần tử trong tập hợp dữ liệu.
++ Cần thay đổi, thêm, xóa phần tử trong tập hợp dữ liệu.
 
-- Cần sắp xếp hoặc lọc dữ liệu.
++ Cần sắp xếp hoặc lọc dữ liệu.
 
-- Cần lưu trữ dữ liệu có kích thước thay đổi.
++ Cần lưu trữ dữ liệu có kích thước thay đổi.
 
 **Phương thức của List:**
-- *append():* Thêm một phần tử vào cuối danh sách.    
++ *append():* Thêm một phần tử vào cuối danh sách.    
 ```
 *Ví dụ:* danh_sach.append(5)
 ```
 
-- *insert():* Chèn một phần tử vào vị trí chỉ định trong danh sách.   
++ *insert():* Chèn một phần tử vào vị trí chỉ định trong danh sách.   
 ```
 *Ví dụ:* danh_sach.insert(1, 10) sẽ chèn số 10 vào vị trí index 1
 ```
 
-- *extend():* Mở rộng danh sách bằng cách thêm các phần tử từ một iterable khác.  
++ *extend():* Mở rộng danh sách bằng cách thêm các phần tử từ một iterable khác.  
 ```
 *Ví dụ:* danh_sach.extend([6, 7, 8])
 ```
 
-- *remove():* Xóa một phần tử khỏi danh sách.     
++ *remove():* Xóa một phần tử khỏi danh sách.     
 ```
 *Ví dụ:* danh_sach.remove(2) sẽ xóa phần tử có giá trị 2.
 ```
 
-- *pop():* Xóa và trả về phần tử ở vị trí chỉ định (mặc định là cuối cùng).   
++ *pop():* Xóa và trả về phần tử ở vị trí chỉ định (mặc định là cuối cùng).   
 ```
 *Ví dụ:* danh_sach.pop() sẽ xóa và trả về phần tử cuối cùng.
 ```
 
 
-+ ***Tuple*** là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
+- ***Tuple*** là kiểu dữ liệu immutable, không thể thay đổi nội dung sau khi tạo.
 
 ***Ví dụ:***
 ```
@@ -133,20 +133,20 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 
 **Dùng Tuple khi:**
 
-- Dữ liệu không cần thay đổi sau khi tạo.
++ Dữ liệu không cần thay đổi sau khi tạo.
 
-- Cần đảm bảo tính toàn vẹn của dữ liệu.
++ Cần đảm bảo tính toàn vẹn của dữ liệu.
 
-- Cần sử dụng như khóa trong dictionary (vì khóa phải là immutable).
++ Cần sử dụng như khóa trong dictionary (vì khóa phải là immutable).
 
 **Phương thức của Tuple:**
 
-- *count():* Đếm số lần xuất hiện của một phần tử trong tuple.    
++ *count():* Đếm số lần xuất hiện của một phần tử trong tuple.    
 ```
 Ví dụ: bo_tu.count(2) sẽ trả về 1.
 ```
 
-- *index():* Trả về chỉ số của phần tử đầu tiên có giá trị được chỉ định.     
++ *index():* Trả về chỉ số của phần tử đầu tiên có giá trị được chỉ định.     
 ```
 Ví dụ: bo_tu.index(3) sẽ trả về 2.
 ```
