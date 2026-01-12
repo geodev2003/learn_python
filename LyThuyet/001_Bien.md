@@ -1,24 +1,24 @@
 # Biến và Kiểu Dữ Liệu trong Python 
 
-
-Biến được dùng để lưu trữ dữ liệu trong chương trình.
+## 1. Biến
+***Biến*** được dùng để lưu trữ dữ liệu trong chương trình.
 Biến có thể chứa các kiểu dữ liệu khác nhau như số nguyên, số thực, chuỗi, danh sách, v.v.
 
-Các loại biến trong Python:
-- Biến số nguyên (int): Lưu trữ các số nguyên.
-- Biến số thực (float): Lưu trữ các số thập phân.
-- Biến chuỗi (str): Lưu trữ các chuỗi ký tự.
-- Biến danh sách (list): Lưu trữ một tập hợp các giá trị có thể thay đổi.
-- Biến tuple (tuple): Lưu trữ một tập hợp các giá trị không thể thay đổi.
-- Biến boolean (bool): Lưu trữ giá trị đúng (True) hoặc sai (False).
+**Các loại biến trong Python:**
+*- Biến số nguyên (int):* Lưu trữ các số nguyên.
+*- Biến số thực (float):* Lưu trữ các số thập phân.
+*- Biến chuỗi (str):* Lưu trữ các chuỗi ký tự.
+*- Biến danh sách (list):* Lưu trữ một tập hợp các giá trị có thể thay đổi.
+*- Biến tuple (tuple):* Lưu trữ một tập hợp các giá trị không thể thay đổi.
+*- Biến boolean (bool):* Lưu trữ giá trị đúng (True) hoặc sai (False).
 
-Ví dụ:
-ten = "Nguyen Van A"  # Biến chuỗi
+***Ví dụ:***
+```ten = "Nguyen Van A"  # Biến chuỗi
 tuoi = 25              # Biến số nguyên
 diem_trung_binh = 8.5  # Biến số thực
 is_student = True      # Biến boolean
 mon_hoc = ["Toan", "Ly", "Hoa"]  # Biến danh sách
-thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
+thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple```
 
 Mutable và Immutable trong Python:
 - Biến mutable (có thể thay đổi): Danh sách (list), dictionary (dict), set.
