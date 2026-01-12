@@ -1,4 +1,4 @@
-# *** Biến và Kiểu Dữ Liệu trong Python ***
+# Biến và Kiểu Dữ Liệu trong Python 
 
 
 Biến được dùng để lưu trữ dữ liệu trong chương trình.
