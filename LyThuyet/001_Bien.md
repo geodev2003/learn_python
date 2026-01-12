@@ -5,7 +5,7 @@
 
 Biến có thể chứa các kiểu dữ liệu khác nhau như số nguyên, số thực, chuỗi, danh sách, v.v.
 
-**Các loại biến trong Python:**
+### Các loại biến trong Python:
 
 *- Biến số nguyên (int):* Lưu trữ các số nguyên.
 
@@ -29,13 +29,13 @@ mon_hoc = ["Toan", "Ly", "Hoa"]  # Biến danh sách
 thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
 ```
 
-**Mutable và Immutable trong Python:**
+### Mutable và Immutable trong Python:
 
 ***- Biến mutable (có thể thay đổi):*** Danh sách (list), dictionary (dict), set
 
 ***- Biến immutable (không thể thay đổi):*** Số nguyên (int), số thực (float), chuỗi (str), tuple.
 
-**Ép kiểu dữ liệu:**
+### *Ép kiểu dữ liệu:
 - Sử dụng hàm *int()*, *float()*, *str()* để chuyển đổi giữa các kiểu dữ liệu
 
 ***Ví dụ:***
@@ -46,7 +46,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
     d = str(b)  # Chuyển số nguyên sang chuỗi
 ```
 
-**Type của biến:**
+### Type của biến:
 - Sử dụng hàm *type()* để kiểm tra kiểu dữ liệu của một biến.
 
 ***Ví dụ:***
@@ -57,7 +57,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
     print(type(y))  # Kết quả: <class 'str'>
 ```
 
-**isInstance:**
+### isInstance:
 - Sử dụng hàm *isinstance()* để kiểm tra xem một biến có phải là một kiểu dữ liệu cụ thể hay không.
 
 ***Ví dụ: ***
@@ -67,7 +67,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
     print(isinstance(z, dict))  # Kết quả: False
 ```
 
-**id của biến:**
+### id của biến:
 - Sử dụng hàm *id()* để lấy địa chỉ bộ nhớ của một biến.
 
 ***Ví dụ:***
@@ -76,7 +76,7 @@ thong_tin_sv = ("Nguyen Van A", 25, 8.5)  # Biến tuple
     print(id(a))  # Kết quả: Địa chỉ bộ nhớ của biến a
 ```
 
-## List và Tuple:
+### List và Tuple:
 - *** List *** là kiểu dữ liệu mutable, có thể thay đổi nội dung sau khi tạo.
 
 ***Ví dụ:***
@@ -151,7 +151,7 @@ Ví dụ: bo_tu.count(2) sẽ trả về 1.
 Ví dụ: bo_tu.index(3) sẽ trả về 2.
 ```
 
-## Ưu nhược điểm của List và Tuple:
+### Ưu nhược điểm của List và Tuple:
 - ***List:***
   + Ưu điểm: Có thể thay đổi nội dung, linh hoạt trong việc quản lý dữ liệu.
   + Nhược điểm: Tốn nhiều bộ nhớ hơn so với tuple.
@@ -160,7 +160,7 @@ Ví dụ: bo_tu.index(3) sẽ trả về 2.
   + Ưu điểm: Tốn ít bộ nhớ hơn, an toàn hơn vì không thể thay đổi nội dung.
   + Nhược điểm: Không thể thay đổi nội dung sau khi tạo.
 
-**Chuyển dổi giữa List và Tuple:**
+### Chuyển dổi giữa List và Tuple:
 - Sử dụng hàm list() để chuyển từ tuple sang list.
 - Sử dụng hàm tuple() để chuyển từ list sang tuple.
 ***Ví dụ:***
@@ -173,25 +173,29 @@ Ví dụ: bo_tu.index(3) sẽ trả về 2.
     print(danh_sach)  # Kết quả: [4, 5, 6]
 ```
 
-Set và Dictionary:
-- Set là tập hợp các phần tử duy nhất, không có thứ tự.
-- Dictionary là tập hợp các cặp khóa-giá trị, cho phép truy cập nhanh theo khóa.
+### Set và Dictionary:
+- ***Set*** là tập hợp các phần tử duy nhất, không có thứ tự.
+- ***Dictionary*** là tập hợp các cặp khóa-giá trị, cho phép truy cập nhanh theo khóa.
 
-Độ phạm vi của biến:
-- Biến toàn cục (global): Có thể được truy cập từ bất kỳ đâu trong chương trình.
-- Biến cục bộ (local): Chỉ có thể được truy cập trong phạm vi của hàm hoặc khối mã nơi nó được định nghĩa.
+**Độ phạm vi của biến:**
+- ***Biến toàn cục (global):*** Có thể được truy cập từ bất kỳ đâu trong chương trình.
+- ***Biến cục bộ (local):*** Chỉ có thể được truy cập trong phạm vi của hàm hoặc khối mã nơi nó được định nghĩa.
 
-Độ dài của kiểu dữ liệu:
-- Sử dụng hàm len() để xác định độ dài của chuỗi, danh sách, tuple hoặc dictionary.
-- Ví dụ:
+**Độ dài của kiểu dữ liệu:**
+- Sử dụng hàm *len()* để xác định độ dài của chuỗi, danh sách, tuple hoặc dictionary.
+***Ví dụ:***
+```
   chuoi = "Hello"
   print(len(chuoi))  # Kết quả: 5
     danh_sach = [1, 2, 3, 4, 5]
     print(len(danh_sach))  # Kết quả: 5
+```
 
-Địa chỉ bộ nhớ:
+### Địa chỉ bộ nhớ:
 - Mỗi biến trong Python đều có một địa chỉ bộ nhớ riêng biệt.
 - Sử dụng hàm id() để lấy địa chỉ bộ nhớ của một biến.
-- Ví dụ:
+***Ví dụ:***
+```
   a = 10
   print(id(a))  # Kết quả: Địa chỉ bộ nhớ của biến a
+```
