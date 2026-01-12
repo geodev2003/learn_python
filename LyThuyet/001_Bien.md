@@ -624,3 +624,6 @@ tác giả và năm xuất bản.
   a = 10
   print(id(a))  # Kết quả: Địa chỉ bộ nhớ của biến a
 ```
+
+## 2. Bài tập
+(BaiTap\001_bien.py)
