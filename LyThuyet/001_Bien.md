@@ -626,4 +626,4 @@ tác giả và năm xuất bản.
 ```
 
 ## 2. Bài tập
-(BaiTap\001_bien.py)
+[Xem bài tập](BaiTap\001_bien.py)
